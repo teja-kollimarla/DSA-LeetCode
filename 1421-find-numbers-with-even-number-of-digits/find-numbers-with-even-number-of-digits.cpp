@@ -5,7 +5,9 @@ public:
     int findNumbers(vector<int>& nums) {
         int c=0;
         for(auto i :nums){
-            if(to_string(i).length() % 2 ==0){
+            int digits = (int)log10(i) + 1;
+
+            if(digits % 2 ==0){
                 c++;
             }
         }
