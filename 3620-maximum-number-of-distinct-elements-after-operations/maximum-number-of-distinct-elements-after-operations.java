@@ -3,16 +3,6 @@ import java.util.*;
 
 class Solution {
 
-    public int count(int n,int[] nums){
-        int c=0;
-        for(int i:nums){
-            if(i==n){
-                c++;
-            }
-        }
-        return c;
-    }
-
     public int uniqueMax(int[] nums){
         Set<Integer> sc=new HashSet<>();
         for(int e:nums){
