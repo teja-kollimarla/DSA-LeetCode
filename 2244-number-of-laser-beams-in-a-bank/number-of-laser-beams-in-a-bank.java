@@ -11,10 +11,14 @@ class Solution {
                     c++;
                 }
             }
-            a+=t*c;
-            if(c>0){
-                t=c;
+
+            if(c==0){
+                continue;
             }
+            a+=t*c;
+            
+            t=c;
+            
             
             
 
