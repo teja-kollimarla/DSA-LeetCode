@@ -3,9 +3,10 @@ public:
     string processStr(string s) {
         string res = "";
         for (int i : s) {
-            if (isalpha(i)) {
+            if ((i >= 'a' && i <= 'z')) {
                 res += i;
-            } else if (i == '#') {
+            } 
+            else if (i == '#') {
                 res += res;
             } else if (i == '*') {
                 if (!res.empty()) {
