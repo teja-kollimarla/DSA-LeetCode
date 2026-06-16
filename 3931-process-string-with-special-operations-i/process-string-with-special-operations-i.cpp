@@ -4,7 +4,7 @@ public:
         string res = "";
         for (int i : s) {
             if ((i >= 'a' && i <= 'z')) {
-                res += i;
+                res.push_back(i);
             } 
             else if (i == '#') {
                 res += res;
