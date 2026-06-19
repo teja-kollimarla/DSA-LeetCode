@@ -7,6 +7,3 @@ class Solution:
             if mp.get(i, 0) != int(num[i]):
                 return False
         return True
-
-# Example
-print(Solution().digitCount("1210"))  # Output: True
